@@ -23,44 +23,44 @@ values (1, 'Task 1', 'First task for first project', 'Done', '2024-02-10 18:00')
 insert Assigned_Tasks(User_Id, Task_Id)
 values
 (
-	(SELECT Id FROM Users WHERE Username='User1'),
-    (SELECT Id FROM Tasks WHERE Title='Task 1')
+	(select Id from Users where Username='User1'),
+	(select Id from Tasks where Title='Task 1')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User1'),
-    (SELECT Id FROM Tasks WHERE Title='Task 3')
+	(select Id from Users where Username='User1'),
+	(select Id from Tasks where Title='Task 3')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User2'),
-    (SELECT Id FROM Tasks WHERE Title='Task 2')
+	(select Id from Users where Username='User2'),
+	(select Id from Tasks where Title='Task 2')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User3'),
-    (SELECT Id FROM Tasks WHERE Title='Task 4')
+	(select Id from Users where Username='User3'),
+	(select Id from Tasks where Title='Task 4')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User3'),
-    (SELECT Id FROM Tasks WHERE Title='Task 5')
+	(select Id from Users where Username='User3'),
+	(select Id from Tasks where Title='Task 5')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User4'),
-    (SELECT Id FROM Tasks WHERE Title='Task 6')
+	(select Id from Users where Username='User4'),
+	(select Id from Tasks where Title='Task 6')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User5'),
-    (SELECT Id FROM Tasks WHERE Title='Task 8')
+	(select Id from Users where Username='User5'),
+	(select Id from Tasks where Title='Task 8')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User5'),
-    (SELECT Id FROM Tasks WHERE Title='Task 7')
+	(select Id from Users where Username='User5'),
+	(select Id from Tasks where Title='Task 7')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User1'),
-    (SELECT Id FROM Tasks WHERE Title='Task 9')
+	(select Id from Users where Username='User1'),
+	(select Id from Tasks where Title='Task 9')
 ),
 (
-	(SELECT Id FROM Users WHERE Username='User3'),
-    (SELECT Id FROM Tasks WHERE Title='Task 10')
+	(select Id from Users where Username='User3'),
+	(select Id from Tasks where Title='Task 10')
 );
 
 insert into Users_Projects(User_Id, Project_Id)
